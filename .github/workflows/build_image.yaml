@@ -21,4 +21,4 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: riskheiv/tests:latest
+          tags: kasano/riskheiv-tests:latest

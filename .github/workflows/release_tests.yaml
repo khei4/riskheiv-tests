@@ -9,7 +9,7 @@ jobs:
     steps:
     - name: copy tests from image and zip it
       run: |
-        docker run --rm -v $(pwd):/output riskheiv/tests bash -c "cp -r /tmp /output/"
+        docker run --rm -v $(pwd):/output kasano/riskheiv-tests bash -c "cp -r /tmp /output/"
         zip -r riskheiv-tests tmp
 
     - name: Create Release 
